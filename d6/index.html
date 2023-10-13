@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .circle-container {
+        position: relative;
+        width: 24em;
+        height: 24em;
+        padding: 2.8em;
+        /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+        /* border: w 1px; */
+        border-radius: 50%;
+        margin: 1.75em auto 0;
+        background-color: white;
+    }
+    .circle-container a {
+        display: block;
+        position: absolute;
+        top: 50%; left: 50%;
+        width: 4em; height: 4em;
+        margin: -2em;
+    }
+    .circle-container img { display: block; width: 100%; }
+    /* .deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper 
+    .deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+    .deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+    .deg180 { transform: translate(-12em); }
+    .deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+    .deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); } */
+
+    .deg0{ transform: rotate(0deg) translate(12em) rotate(-0deg); }
+.deg18{ transform: rotate(18deg) translate(12em) rotate(-18deg); }
+.deg36{ transform: rotate(36deg) translate(12em) rotate(-36deg); }
+.deg54{ transform: rotate(54deg) translate(12em) rotate(-54deg); }
+.deg72{ transform: rotate(72deg) translate(12em) rotate(-72deg); }
+.deg90{ transform: rotate(90deg) translate(12em) rotate(-90deg); }
+.deg108{ transform: rotate(108deg) translate(12em) rotate(-108deg); }
+.deg126{ transform: rotate(126deg) translate(12em) rotate(-126deg); }
+.deg144{ transform: rotate(144deg) translate(12em) rotate(-144deg); }
+.deg162{ transform: rotate(162deg) translate(12em) rotate(-162deg); }
+.deg180{ transform: rotate(180deg) translate(12em) rotate(-180deg); }
+
+
+    .outer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #bd9c5e;
+  margin: 5px;
+  cursor:pointer;
+}
+
+.inner {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-out;
+}
+
+
+#pic{
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    left: -65px;
+    position: absolute;
+
+}
+/* .outer:hover .inner {
+  width: 90%;
+  height: 90%;
+} */
+    </style>
+</head>
+<body>
+
+
+<!-- <div class="outer">
+    <div class="inner"></div>
+  </div> -->
+
+<div class='circle-container'>
+    <a href='#' class='center'>
+    <!-- <div class="inner"></div> -->
+    <image src="image.png" id="pic"/>
+  </a>
+  <a href='#' class='deg0'><div class='outer'>    <div class='inner'></div>  </div></a>
+  <a href='#' class='deg18'><div class='outer'>    <div class='inner'></div>  </div></a>
+  <a href='#' class='deg36'><div class='outer'>    <div class='inner'></div>  </div></a>
+  <a href='#' class='deg54'><div class='outer'>    <div class='inner'></div>  </div></a>
+  <a href='#' class='deg72'><div class='outer'>    <div class='inner'></div>  </div></a>
+  <a href='#' class='deg90'><div class='outer'>    <div class='inner'></div>  </div></a>
+  <a href='#' class='deg108'><div class='outer'>    <div class='inner'></div>  </div></a>
+  <a href='#' class='deg126'><div class='outer'>    <div class='inner'></div>  </div></a>
+  <a href='#' class='deg144'><div class='outer'>    <div class='inner'></div>  </div></a>
+  <a href='#' class='deg162'><div class='outer'>    <div class='inner'></div>  </div></a>
+  <a href='#' class='deg180'><div class='outer'>    <div class='inner'></div>  </div></a>
+</div>
+
+</body>
+</html>
